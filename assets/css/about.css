@@ -1,0 +1,20 @@
+.secctions1{
+  background-color: rgb(211, 210, 210);
+}
+.imgslogo{
+    width: 420px;
+    object-fit: contain;
+}
+.modas{
+    height: 300px;
+    width: 100px;
+    object-fit: contain;
+}
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    background: transparent; /* Establecer el fondo como transparente */
+    border: none; /* Eliminar el borde */
+    color: #000; /* Cambiar el color del icono si lo deseas */
+    font-size: 24px; /* Tamaño del icono si lo deseas */
+  }
