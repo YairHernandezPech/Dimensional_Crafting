@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>TrendyCloset</title>
+    <title>Dimensional Crafting</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="apple-touch-icon" href="assets/img/Logo.jpg" />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="assets/img/Logo.jpg"
-    />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/Logo.jpg" />
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/templatemo.css" />
@@ -18,11 +14,17 @@
 
     <!-- Load fonts style after rendering the layout styles -->
     <style>
-        .img-fluid{
-            width: 300px;
-            height: 400px;
-            object-fit: cover;
-        }
+      :root {
+        --primary-color: #284259;
+        --background-color: #bf9d7e;
+        --dark-color: #6093bf;
+      }
+
+      .img-fluid {
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+      }
     </style>
     <link
       rel="stylesheet"
@@ -35,63 +37,86 @@
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
       <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand logo h1 align-self-center" href="index.html">
+          D - Crafting
+        </a>
 
-          <a class="navbar-brand logo h1 align-self-center" href="index.html">
-              TrendyCloset
-          </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#templatemo_main_nav"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-              data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
-              id="templatemo_main_nav">
-              <div class="flex-fill">
-                  <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-                      <li class="nav-item">
-                          <a class="nav-link" href="index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="about.html">Quienes somos</a>
-                      </li>
-                      <!-- <li class="nav-item">
+        <div
+          class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between"
+          id="templatemo_main_nav"
+        >
+          <div class="flex-fill">
+            <ul
+              class="nav navbar-nav d-flex justify-content-between mx-lg-auto"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Quienes somos</a>
+              </li>
+              <!-- <li class="nav-item">
                           <a class="nav-link" href="shop.html">Shop</a>
                       </li> -->
-                      <li class="nav-item">
-                          <a class="nav-link" href="contact.html">Contacto</a>
-                      </li>
-                  </ul>
-              </div>
-              <div class="navbar align-self-center d-flex">
-                  <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
-                      <div class="input-group">
-                          <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
-                          <div class="input-group-text">
-                              <i class="fa fa-fw fa-search"></i>
-                          </div>
-                      </div>
-                  </div>
-                  <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal"
-                      data-bs-target="#templatemo_search">
-                      <i class="fa fa-fw fa-search text-dark mr-2"></i>
-                  </a>
-                  <a class="nav-icon position-relative text-decoration-none" href="#">
-                      <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                      <span
-                          class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
-                  </a>
-                  <a class="nav-icon position-relative text-decoration-none" href="#">
-                      <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                      <span
-                          class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
-                  </a>
-              </div>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contacto</a>
+              </li>
+            </ul>
           </div>
-
+          <div class="navbar align-self-center d-flex">
+            <div
+              class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3"
+            >
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputMobileSearch"
+                  placeholder="Search ..."
+                />
+                <div class="input-group-text">
+                  <i class="fa fa-fw fa-search"></i>
+                </div>
+              </div>
+            </div>
+            <a
+              class="nav-icon d-none d-lg-inline"
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#templatemo_search"
+            >
+              <i class="fa fa-fw fa-search text-dark mr-2"></i>
+            </a>
+            <a class="nav-icon position-relative text-decoration-none" href="#">
+              <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+              <span
+                class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"
+                >7</span
+              >
+            </a>
+            <a class="nav-icon position-relative text-decoration-none" href="#">
+              <i class="fa fa-fw fa-user text-dark mr-3"></i>
+              <span
+                class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"
+                >+99</span
+              >
+            </a>
+          </div>
+        </div>
       </div>
-  </nav>
+    </nav>
     <!-- Close Header -->
 
     <!-- Modal -->
@@ -125,10 +150,7 @@
               name="q"
               placeholder="Search ..."
             />
-            <button
-              type="submit"
-              class="input-group-text bg-black text-light"
-            >
+            <button type="submit" class="input-group-text bg-black text-light">
               <i class="fa fa-fw fa-search text-white"></i>
             </button>
           </div>
@@ -164,22 +186,27 @@
               <div class="mx-auto col-md-8 col-lg-6 order-lg-last text-center">
                 <img
                   class="img-fluid"
-                  src="./assets/img/fotoutp3.png"
+                  src="./assets/img/img-index-1.jpg"
                   alt=""
                 />
               </div>
               <div class="col-lg-6 mb-0 d-flex align-items-center">
                 <div class="text-align-left align-self-center">
-                  <h1 class="h1 text-black"><b>TrendyCloset</b> eCommerce</h1>
+                  <h1 class="h1 text-black">
+                    <b>Dimensional Crafting</b> eCommerce
+                  </h1>
                   <h3 class="h2">
-                    ¡Elegancia al 50% de Descuento en tu Primera Compra!
+                    ¡Descubre la magia de las Figuras en Impresión 3D con un 50%
+                    de Descuento en tu Primera Compra!
                   </h3>
                   <p>
-                    Descubre la sofisticación de la moda en TrendyCloset.
-                    Disfruta de un 50% de descuento en tu primera compra de ropa
-                    elegante. Renueva tu guardarropa con nuestras exclusivas
-                    prendas diseñadas para destacar en cualquier ocasión. No te
-                    pierdas esta oportunidad única.
+                    Explora la fascinante colección de figuras en impresión 3D
+                    en My3DStore. Aprovecha un 50% de descuento en tu primera
+                    compra y sumérgete en el mundo de la creatividad
+                    tridimensional. Renueva tu espacio con nuestras exclusivas
+                    figuras diseñadas para destacar en cualquier ambiente. No te
+                    pierdas esta oportunidad única para dar vida a tu colección
+                    de figuras en 3D.
                   </p>
                 </div>
               </div>
@@ -192,19 +219,20 @@
               <div class="mx-auto col-md-8 col-lg-6 order-lg-last text-center">
                 <img
                   class="img-fluid"
-                  src="./assets/img/fotoutp2.png"
+                  src="./assets/img/img-index-2.jpg"
                   alt=""
                 />
               </div>
               <div class="col-lg-6 mb-0 d-flex align-items-center">
                 <div class="text-align-left">
-                  <h1 class="h1">Descubre la Elegancia en Cada Estilo</h1>
+                  <h1 class="h1">Explora la Creatividad en Cada Figura</h1>
                   <p>
-                    En TrendyCloset, la moda elegante es nuestra pasión.
-                    Encuentra la perfecta combinación de estilo y comodidad con
-                    un descuento especial del 30% en nuestra nueva colección de
-                    ropa de alta costura. Eleva tu guardarropa con elegancia hoy
-                    mismo.
+                    En My3DStore, la expresión artística cobra vida a través de
+                    nuestras figuras en impresión 3D. Descubre la combinación
+                    perfecta de innovación y detalle con un descuento especial
+                    del 30% en nuestra nueva colección de figuras
+                    tridimensionales. Eleva tu espacio con estas piezas únicas
+                    que capturan la esencia de la creatividad hoy mismo.
                   </p>
                 </div>
               </div>
@@ -217,22 +245,22 @@
               <div class="mx-auto col-md-8 col-lg-6 order-lg-last text-center">
                 <img
                   class="img-fluid"
-                  src="./assets/img/fotoutp3.png"
+                  src="./assets/img/img-index-4.jpg"
                   alt=""
-                  
                 />
               </div>
-              <div class="col-lg-6 mb-0 d-flex align-items-center ">
+              <div class="col-lg-6 mb-0 d-flex align-items-center">
                 <div class="text-align-left">
                   <h1 class="h1">
-                    stilo Clásico con un Descuento Exclusivo del 40%
+                    Estilo Atemporal con un Descuento Exclusivo del 40%
                   </h1>
-
                   <p>
-                    Experimenta la atemporalidad de la moda clásica con
-                    TrendyCloset. Obtén un descuento exclusivo del 40% en trajes
-                    y vestidos clásicos que te acompañarán en cualquier ocasión.
-                    Descubre la elegancia que nunca pasa de moda.
+                    Sumérgete en la atemporalidad de la creatividad con
+                    My3DStore. Aprovecha un descuento exclusivo del 40% en
+                    nuestras figuras en impresión 3D que añadirán un toque único
+                    a tu colección. Descubre la elegancia de las formas
+                    tridimensionales que perduran en cualquier espacio y
+                    ocasión.
                   </p>
                 </div>
               </div>
@@ -263,11 +291,12 @@
     <section class="container py-5">
       <div class="row text-center pt-3">
         <div class="col-lg-6 m-auto">
-          <h1 class="h1">Categorías del Mes</h1>
+          <h1 class="h1">Explora las Figuras Destacadas del Mes</h1>
           <p>
             Descubre nuestras categorías destacadas de este mes, con las
-            tendencias más elegantes y las prendas de lujo que no querrás
-            perderte. ¡Explora ahora y encuentra la moda de tus sueños!"
+            tendencias más creativas y las figuras en impresión 3D que no
+            querrás perderte. ¡Explora ahora y encuentra la pieza única que
+            complemente tu colección!
           </p>
         </div>
       </div>
@@ -275,37 +304,42 @@
         <div class="col-12 col-md-4 p-5 mt-3">
           <a href="#"
             ><img
-              src="./assets/img/fotoutp4.png"
+              src="./assets/img/img-index-3.jpg"
               class="rounded-circle img-fluid border"
-              style="object-fit: fill; background-color: rgb(235, 235, 235);"
+              style="object-fit: fill; background-color: rgb(235, 235, 235)"
           /></a>
-          <h5 class="text-center mt-3 mb-3">Colección de Alta Costura</h5>
+          <h5 class="text-center mt-3 mb-3">
+            Colección Exclusiva en Impresión 3D
+          </h5>
           <p class="text-center">
-            <a class="btn btn-success">ir de compras</a>
+            <a class="btn btn-success">Explorar Figuras</a>
           </p>
         </div>
         <div class="col-12 col-md-4 p-5 mt-3">
           <a href="#"
             ><img
-              src="./assets/img/fotoutp5.png"
-              class="rounded-circle img-fluid border";
-              style="object-fit: fill; background-color: rgb(235, 235, 235);"
+              src="./assets/img/img-index-5.png"
+              class="rounded-circle img-fluid border"
+              ;
+              style="object-fit: fill; background-color: rgb(235, 235, 235)"
           /></a>
-          <h2 class="h5 text-center mt-3 mb-3">Atuendos de Temporada</h2>
+          <h2 class="h5 text-center mt-3 mb-3">
+            Figuras Destacadas de Temporada
+          </h2>
           <p class="text-center">
-            <a class="btn btn-success">ir de compras</a>
+            <a class="btn btn-success">Explorar Figuras</a>
           </p>
         </div>
         <div class="col-12 col-md-4 p-5 mt-3">
           <a href="#"
             ><img
-              src="./assets/img/fotoupt6.png"
+              src="./assets/img/img-index-6.jpg"
               class="rounded-circle img-fluid border"
-              style="object-fit: fill; background-color: rgb(235, 235, 235);"
+              style="object-fit: fill; background-color: rgb(235, 235, 235)"
           /></a>
-          <h2 class="h5 text-center mt-3 mb-3">Ropa de Noche Glamurosa</h2>
+          <h2 class="h5 text-center mt-3 mb-3">Figuras Nocturnas Glamurosas</h2>
           <p class="text-center">
-            <a class="btn btn-success">ir de compras</a>
+            <a class="btn btn-success">Explorar Figuras</a>
           </p>
         </div>
       </div>
@@ -317,25 +351,24 @@
       <div class="container py-5">
         <div class="row text-center py-3">
           <div class="col-lg-6 m-auto">
-            <h1 class="h1">Producto Destacado de la Semana</h1>
+            <h1 class="h1">Figura Destacada de la Semana</h1>
             <p>
-              Te presentamos nuestro producto destacado de la semana, una
-              auténtica joya de la moda de lujo que no querrás perderte.
-              Descubre la elegancia y la exclusividad en cada detalle de esta
-              prenda única.
+              Te presentamos nuestra figura destacada de la semana, una
+              auténtica obra de arte en impresión 3D que no querrás perderte.
+              Descubre la creatividad y la exclusividad en cada detalle de esta
+              pieza única.
             </p>
           </div>
         </div>
         <div class="row">
           <div class="col-12 col-md-4 mb-4">
             <div class="card h-100 text-center">
-              
               <a href="shop-single.html">
                 <img
-                    src="./assets/img/fotoutp4.png"
-                    class="card-img-top img-fluid"
-                    alt="..."
-                    style="object-fit: fill"
+                  src="./assets/img/img-index-7.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                  style="object-fit: fill"
                 />
               </a>
               <div class="card-body">
@@ -352,13 +385,14 @@
                 <a
                   href="shop-single.html"
                   class="h2 text-decoration-none text-dark"
-                  >Vestido de Noche de Alta Costura</a
+                  >Figura Nocturna Exclusiva</a
                 >
                 <p class="card-text">
-                  Descubre la esencia de la elegancia con nuestro Vestido de
-                  Noche de Alta Costura. Este exquisito vestido está diseñado
-                  para hacerte destacar en cualquier ocasión especial.
+                  Descubre la esencia de la elegancia con nuestra Figura
+                  Nocturna Exclusiva. Esta exquisita pieza está diseñada para
+                  destacar en cualquier ocasión especial.
                 </p>
+
                 <p class="text-muted">Reviews (24)</p>
               </div>
             </div>
@@ -367,7 +401,7 @@
             <div class="card h-100 text-center">
               <a href="shop-single.html">
                 <img
-                  src="./assets/img/fotoutp5.png"
+                  src="./assets/img/img-index-8.jpg"
                   class="card-img-top img-fluid"
                   alt="..."
                   style="object-fit: fill"
@@ -387,13 +421,14 @@
                 <a
                   href="shop-single.html"
                   class="h2 text-decoration-none text-dark"
-                  >Abrigo de Invierno de Diseñador</a
+                  >Figura de Invierno en 3D</a
                 >
                 <p class="card-text">
-                  Mantente cálido y a la moda con nuestro Abrigo de Invierno de
-                  Diseñador. Este exclusivo abrigo combina estilo y
-                  funcionalidad en un solo diseño impresionante.
+                  Disfruta de la creatividad y el estilo con nuestra Figura de
+                  Invierno en 3D. Esta pieza exclusiva combina diseño único y
+                  funcionalidad en una obra impresionante.
                 </p>
+
                 <p class="text-muted">Reviews (48)</p>
               </div>
             </div>
@@ -402,7 +437,7 @@
             <div class="card h-100 text-center">
               <a href="shop-single.html">
                 <img
-                  src="./assets/img/fotoupt6.png"
+                  src="./assets/img/img-index-9.jpg"
                   class="card-img-top img-fluid"
                   alt="..."
                   style="object-fit: fill"
@@ -422,12 +457,14 @@
                 <a
                   href="shop-single.html"
                   class="h2 text-decoration-none text-dark"
-                  >Vestido de Gala Exclusivo</a
+                  >Figura de Gala Exclusiva</a
                 >
                 <p class="card-text">
-                    Haz una declaración de moda con nuestro Vestido de Gala Exclusivo. Este elegante vestido está diseñado para resaltar tu belleza y elegancia en eventos de alto perfil.
+                  Haz una declaración de estilo con nuestra Figura de Gala
+                  Exclusiva. Esta elegante pieza está diseñada para resaltar la
+                  creatividad y la elegancia en cualquier ocasión especial.
                 </p>
-                </p>
+
                 <p class="text-muted">Reviews (74)</p>
               </div>
             </div>
@@ -443,15 +480,13 @@
         <div class="row">
           <div class="col-md-4 pt-5">
             <h2 class="h2 text-success border-bottom pb-3 border-light logo">
-                TrendyCloset
+              Dimensional Crafting
             </h2>
             <ul class="list-unstyled text-light footer-link-list">
               <li>
-            
-
-
                 <i class="fas fa-map-marker-alt fa-fw"></i>
-                ¡Estamos trabajando en nuestra nueva ubicación en México! Pronto te proporcionaremos más detalles.
+                ¡Estamos trabajando en nuestra nueva ubicación en México! Pronto
+                te proporcionaremos más detalles.
               </li>
               <li>
                 <i class="fa fa-phone fa-fw"></i>
@@ -461,8 +496,8 @@
               </li>
               <li>
                 <i class="fa fa-envelope fa-fw"></i>
-                <a class="text-decoration-none" href="mailto:info@company.com"
-                  > Email: info@trendycloset.com</a
+                <a class="text-decoration-none" href="mailto:info@company.com">
+                  Email: info@Dimensional.Crafting.com</a
                 >
               </li>
             </ul>
@@ -473,15 +508,40 @@
               Products
             </h2>
             <ul class="list-unstyled text-light footer-link-list">
-                <li><a class="text-decoration-none" href="#">Ropa de Lujo</a></li>
-                <li><a class="text-decoration-none" href="#">Ropa Deportiva</a></li>
-                <li><a class="text-decoration-none" href="#">Zapatos para Hombres</a></li>
-                <li><a class="text-decoration-none" href="#">Zapatos para Mujeres</a></li>
-                <li><a class="text-decoration-none" href="#">Vestidos Populares</a></li>
-                <li><a class="text-decoration-none" href="#">Accesorios para el Gimnasio</a></li>
-                <li><a class="text-decoration-none" href="#">Zapatos Deportivos</a></li>
-              </ul>
-              
+              <li>
+                <a class="text-decoration-none" href="#"
+                  >Figuras de Lujo en 3D</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none" href="#"
+                  >Figuras Deportivas en 3D</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none" href="#"
+                  >Esculturas para Coleccionar</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none" href="#"
+                  >Arte en 3D para Mujeres</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none" href="#">Figuras Populares</a>
+              </li>
+              <li>
+                <a class="text-decoration-none" href="#"
+                  >Accesorios para Coleccionistas</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none" href="#"
+                  >Esculturas Deportivas en 3D</a
+                >
+              </li>
+            </ul>
           </div>
 
           <div class="col-md-4 pt-5">
@@ -489,14 +549,25 @@
               Further Info
             </h2>
             <ul class="list-unstyled text-light footer-link-list">
-                <li><a class="text-decoration-none" href="#">Más Información</a></li>
-                <li><a class="text-decoration-none" href="#">Inicio</a></li>
-                <li><a class="text-decoration-none" href="#">Acerca de Nosotros</a></li>
-                <li><a class="text-decoration-none" href="#">Ubicaciones de Tiendas</a></li>
-                <li><a class="text-decoration-none" href="#">Preguntas Frecuentes</a></li>
-                <li><a class="text-decoration-none" href="#">Contacto</a></li>
-              </ul>
-              
+              <li>
+                <a class="text-decoration-none" href="#">Más Información</a>
+              </li>
+              <li><a class="text-decoration-none" href="#">Inicio</a></li>
+              <li>
+                <a class="text-decoration-none" href="#">Acerca de Nosotros</a>
+              </li>
+              <li>
+                <a class="text-decoration-none" href="#"
+                  >Ubicaciones de Tiendas</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none" href="#"
+                  >Preguntas Frecuentes</a
+                >
+              </li>
+              <li><a class="text-decoration-none" href="#">Contacto</a></li>
+            </ul>
           </div>
         </div>
 
@@ -570,7 +641,7 @@
           <div class="row pt-2">
             <div class="col-12">
               <p class="text-left text-light">
-                Copyright &copy; 2021 Company TrendyCloset
+                Copyright &copy; 2021 Company Dimensional Crafting
               </p>
             </div>
           </div>
