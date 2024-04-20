@@ -15,6 +15,16 @@
   .carousel-control-next {
     background: transparent; /* Establecer el fondo como transparente */
     border: none; /* Eliminar el borde */
-    color: #000; /* Cambiar el color del icono si lo deseas */
-    font-size: 24px; /* Tamaño del icono si lo deseas */
+    background-color: #8e8b8b;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0.8;
+    top: calc(50% - 25px);
+  }
+  .carousel-control-prev svg,
+  .carousel-control-next svg {
+      fill: #ffffff; /* Cambia este color al que desees */
+      width: 30px; /* Tamaño personalizado si lo deseas */
+      height: 30px; /* Tamaño personalizado si lo deseas */
   }
